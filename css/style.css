@@ -12,6 +12,32 @@ body{
     width: 80%;
     background-color: rgb(235, 227, 227);
     margin: 0 auto;
+    padding-top: 50px;
+}
+/* ---------
+header section
+............ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.brand-name h4 a{
+    text-decoration: none;
+    color: #3A3A3A;
+  
+}
+.menu a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: #3A3A3A;
+    ;
+    font-size: 14px;
+}
+.bannar{
+    display: flex;
+    justify-content: space-between;
 }
 /* ---------
 populer collection
