@@ -19,6 +19,7 @@ body{
     color: white;
     border-radius: 30px 30px;
 }
+
 .main-container{
     width: 80%;
     /* background-color: rgb(235, 227, 227); */
@@ -28,6 +29,7 @@ body{
 /* ---------
 header section
 ............ */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -50,12 +52,22 @@ nav{
 .bannar{
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
 }
 .bannar-pic img{
     width: 400px;
     height: 400px;
     padding: 50px;
+    border-radius: 50%;
+    background-color:lightpink; 
+    animation: example 5s linear 1s infinite alternate;
 }
+@keyframes example {
+    0%   {background-color: rgba(235, 146, 159, 0.849);}
+    25%  {background-color: lightgoldenrodyellow}
+    50%  {background-color: rgba(212, 112, 127, 0.753);}
+    100% {background-color: lightgrey;}
+  }
 .bannar-text{
     padding: 50px 80px 50px 0;
     text-align:justify ;
@@ -70,6 +82,9 @@ nav{
 }
 .bannar-text a{
     text-decoration: none;
+}
+.bannar-text:hover .fa-arrow-right{
+    transform: scale(1.6);
 }
 /* ---------
 populer collection
@@ -138,6 +153,17 @@ populer collection
     
 }
 
+/* --------------
+contact start
+...................... */
+.contact{
+    display: flex;
+    justify-content: space-between;padding: 50px 0;
+}
+.mail-fild{
+    padding: 10px;
+}
+
 /* ------------------
      footer
 ------------------- */
@@ -183,7 +209,7 @@ footer a:hover .fab{
     .all-items{
         grid-template-columns: repeat(1,1fr);
     }
-    .bannar{
+    .bannar,.contact{
         flex-direction: column-reverse;
     }
     nav{
