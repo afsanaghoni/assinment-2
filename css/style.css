@@ -192,10 +192,19 @@ footer a:hover .fab{
     .menu>a{
         display: block;
         text-align: center;
-        padding: 5px;
+        padding: 10px;
     }
     .bannar-text{
         text-align: center;
         padding: 10px;
     }
+}
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .all-items{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .bannar{
+        flex-direction: column-reverse;
+    }
+    
 }
